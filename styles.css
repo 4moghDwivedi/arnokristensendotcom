@@ -6,6 +6,9 @@
     color: rgba(0, 0, 0, 0.7);
 }
 
+br{
+    margin: 1rem;
+}
 a:hover{
     color: rgb(180, 180, 180);
 
@@ -122,4 +125,12 @@ hr{
     text-align: center; 
     color: gray;
     font-size: 0.8rem;
+}
+.listen-title{
+    margin: 0.8rem auto 0.5rem 1rem;
+    padding: 0;
+}
+.listen-text{
+    margin: 0.8rem auto 1rem 1rem;
+    padding: 0 ;
 }
