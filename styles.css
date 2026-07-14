@@ -9,13 +9,14 @@
 br{
     margin: 1rem;
 }
-a:hover{
-    color: rgb(180, 180, 180);
 
-}
 a:link{
     text-decoration: none;
-    /* color: blue; */
+    /* color: cadetblue; */
+}
+a:hover{
+    text-decoration: none;
+    color: gray;
 }
 
 .basic-container{
@@ -133,4 +134,14 @@ hr{
 .listen-text{
     margin: 0.8rem auto 1rem 1rem;
     padding: 0 ;
+}
+
+.listen-text a:link{
+    color: cadetblue;
+}
+.listen-text a:visited{
+    color: cadetblue;
+}
+.listen-text a:hover{
+    color: rgb(52, 87, 88);
 }
