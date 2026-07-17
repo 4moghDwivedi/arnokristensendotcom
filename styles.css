@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     /* border: 0.1px dashed red; */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgba(0, 0, 0, 0.7);
+    font-family: Geneva;
+    color: rgba(0, 0, 0, 1.0);
 }
 
 br{
@@ -22,14 +22,13 @@ a:hover{
 .basic-container{
     display: flex;
     flex-direction: column;
-    /* height: 45rem; */
-    width: clamp(22rem, 40vw, 35rem);
-    height: 90vh;
-    /* padding: 10vh; */
-    margin: 3rem auto;
     align-items: center;
 
-    border: 1px solid gray;
+    width: clamp(22rem, 40vw, 35rem);
+    height: 90vh;
+    margin: 3rem auto;
+
+    border: 0.1px solid black;
     border-radius: 1.5rem;
 }
 .homepage-header{
@@ -56,7 +55,8 @@ a:hover{
 
 hr{
     width:95%;
-    color: rgba(0, 0, 0, 0.3);
+    border-top: 0.1px solid black;
+    color: rgba(0, 0, 0, 0.0);
 }
 
 .general-image{
@@ -104,7 +104,7 @@ hr{
     margin: 3rem auto;
     align-items: center;
 
-    border: 1px solid gray;
+    border: 0.1px solid black;
     border-radius: 1.5rem;  
 }
 .about-text{
