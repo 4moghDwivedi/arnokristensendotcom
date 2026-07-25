@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     /* border: 0.1px dashed red; */
-    font-family: Geneva;
+    font-family:Geneva, Verdana, Tahoma, sans-serif;
     color: rgba(0, 0, 0, 1.0);
 }
 
@@ -144,4 +144,63 @@ hr{
 }
 .listen-text a:hover{
     color: rgb(52, 87, 88);
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: flex-start; */
+
+    width: clamp(22rem, 80vw, 85rem);
+    height: 90vh;
+
+    margin: 3rem auto;
+
+    border: 0.1px solid black;
+    border-radius: 10rem;
+
+}
+
+.contact-text{
+    /* font-size: clamp(1rem, 20vw, 7rem); */
+    font-size: clamp(0.5rem, 5.5vw, 10rem);
+
+    margin: auto 0;
+    width: clamp();
+    
+
+}
+
+.contact-text a:link{
+    background-color: white;
+    color: white;
+    border: 3px solid black;
+    border-radius: 13rem;
+
+    padding: 1rem;
+}
+
+.contact-text a:hover{
+    color: white;
+    background-color: black;
+
+    border: 3px solid cadetblue;
+    border-radius: 13rem;
+
+        padding: 2rem;
+}
+
+.contact-header-title{
+    /* margin: 0 auto 0 1rem; */
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+
+}
+
+.come-frame{
+    width: 100%;
+    height: 40rem;
+    margin: 1rem;
+    border: none;
 }
