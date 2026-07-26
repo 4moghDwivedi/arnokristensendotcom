@@ -15,16 +15,6 @@ let max;
 
 let rotVal;
 
-function preload() {
-
-  let path = 'images/';
-  for (let i = 0; i < 69; i++){
-    img[i] = loadImage(path + (i+43) + '.jpg');
-    // names[i] = i+43;
-  }
-
-}
-
 function setup() {
   // Create a canvas that fills the entire browser window
   // createCanvas(500, 900);
@@ -67,9 +57,13 @@ function setup() {
   rotVal = random(360);
 
   imgIndex = floor(random(69));
+
+  let path = '/look/11_arnosSketches/images/';
+  // print(path);
     
   for (let i = 0; i < 69; i++){
-    // img[i] = loadImage(path + (i+43) + '.jpg');
+    img[i] = loadImage(path + (i+43) + '.jpg');
+    // print(path + (i+43) + '.jpg');
     names[i] = i+43;
   }
 
@@ -77,13 +71,13 @@ function setup() {
 
 function draw() {
 
-background(255);
+background(255, 80);
 
 displayImage();
 
 if(shuffling){
-if(frameCount%7 == 0) 
-    rotVal += 1;
+if(frameCount%5 == 0) 
+    rotVal += .1;
 }
 
 
