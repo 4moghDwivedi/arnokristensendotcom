@@ -58,7 +58,7 @@ function setup() {
 
   imgIndex = floor(random(69));
 
-  let path = '/look/11_arnosSketches/images/';
+  let path = '11_arnosSketches/images/';
   // print(path);
     
   for (let i = 0; i < 69; i++){
