@@ -58,7 +58,7 @@ function setup() {
 
   imgIndex = floor(random(69));
     
-  let path = '/look/11_arnosSketches/images/';
+  let path = 'images/';
   for (let i = 0; i < 69; i++){
     img[i] = loadImage(path + (i+43) + '.jpg');
     names[i] = i+43;
