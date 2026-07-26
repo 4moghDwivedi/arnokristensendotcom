@@ -15,6 +15,16 @@ let max;
 
 let rotVal;
 
+function preload() {
+
+  let path = 'images/';
+  for (let i = 0; i < 69; i++){
+    img[i] = loadImage(path + (i+43) + '.jpg');
+    // names[i] = i+43;
+  }
+
+}
+
 function setup() {
   // Create a canvas that fills the entire browser window
   // createCanvas(500, 900);
@@ -58,9 +68,8 @@ function setup() {
 
   imgIndex = floor(random(69));
     
-  let path = 'images/';
   for (let i = 0; i < 69; i++){
-    img[i] = loadImage(path + (i+43) + '.jpg');
+    // img[i] = loadImage(path + (i+43) + '.jpg');
     names[i] = i+43;
   }
 
