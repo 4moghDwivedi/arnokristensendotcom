@@ -54,7 +54,7 @@ function setup() {
     b1y = swap;
   }
 
-  rotVal = random(360);
+  rotVal = 0;
 
   imgIndex = floor(random(69));
 
@@ -71,14 +71,20 @@ function setup() {
 
 function draw() {
 
-background(255, 80);
+
+
+// background(255, map(dc, 0, 179, 0, 255));
+background(255);
 
 displayImage();
 
 if(shuffling){
-if(frameCount%5 == 0) 
-    rotVal += .1;
+    rotVal += 1;
 }
+
+// print(rotVal%360);
+
+  print(dc);
 
 
 drawButton();
@@ -101,9 +107,10 @@ function drawButton(){
 
   translate(bcx, bcy)
 
+  angleMode(DEGREES);
   rotate(rotVal);
   rectMode(CENTER);
-  rect(0, 0, b2x-b1x, b2y-b1y);
+  rect(0, 0, b2x-b1x, b2y-b1y, 13);
 
   pop();
 
@@ -138,16 +145,16 @@ function bc(state){
 
   if (state == 0){
 
-    br=90;
-    bg=90;
-    bb=90;
+    br=200;
+    bg=200;
+    bb=200;
 
   }
   else{
 
-    br=225;
-    bg=225;
-    bb=225;
+    br=245;
+    bg=245;
+    bb=245;
 
   }
 
@@ -159,10 +166,12 @@ function mouseClicked(){
     dc=0;
     da=1;
     shuffling = 1;
-    max = floor(random(30, 180));
+    // max = floor(random(60, 180));
+    max = 180;
 
-    br = 0;
-    bb = 0;
+    // br = 0;
+    // bb = 0;
+    // bg = 0;
 
   }
 }
@@ -176,7 +185,7 @@ function runAnimation(){
     phases[i] = round(quotient * (i+1));
   }
   
-  // if (dc%60 == 0) ds++;
+
 
   if(dc >= max) da = 0;
 
@@ -199,7 +208,7 @@ function runAnimation(){
     if(dc >= phases[4] && dc < phases[5]){
       drawDots(6);
     }
-    if (dc>=max){
+    if (dc==max - 1){
       drawDots(0);
       da=0;
       dc=0;
@@ -222,7 +231,10 @@ function drawDots(numDots){
   noStroke();
   fill(255);
 
+
+
   translate(bcx, bcy);
+  rotate(rotVal);
   switch(numDots){
   case 1:
   circle(0, 0, dotSize);
@@ -287,6 +299,6 @@ function displayImage(){
 
 function shuffleIndex(){
   if (shuffling == 1){
-    if(dc%6 == 0) imgIndex = floor(random(69));
+    if(dc%floor(10) == 0) imgIndex = floor(random(69));
   }
 }
