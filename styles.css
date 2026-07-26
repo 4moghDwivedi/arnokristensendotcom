@@ -163,7 +163,6 @@ hr{
 }
 
 .contact-text{
-    /* font-size: clamp(1rem, 20vw, 7rem); */
     font-size: clamp(0.5rem, 5.5vw, 10rem);
 
     margin: auto 0;
@@ -188,11 +187,11 @@ hr{
     border: 3px solid cadetblue;
     border-radius: 13rem;
 
-        padding: 2rem;
+    padding: 2rem;
 }
 
 .contact-header-title{
-    /* margin: 0 auto 0 1rem; */
+
     font-size: 1.1rem;
     padding: 0.5rem 0;
 
@@ -203,4 +202,13 @@ hr{
     height: 40rem;
     margin: 1rem;
     border: none;
+}
+
+#sketch-holder{
+
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    /* height: 900px; */
+
 }
